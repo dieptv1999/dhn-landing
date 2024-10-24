@@ -6,6 +6,8 @@ import {cn} from "@/lib/utils";
 import {ThemeProvider} from "@/components/layout/theme-provider";
 import React from "react";
 
+export const runtime = "edge";
+
 const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

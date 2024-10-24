@@ -15,6 +15,8 @@ import {getTranslation} from "@/lib/i18n/getTranslation";
 import {Navbar} from "@/components/layout/navbar";
 import React from "react";
 
+export const runtime = "edge";
+
 export const metadata = {
   title: "Giải pháp quay video đóng hàng thương mại điện tử",
   description: "Giải pháp quay video đóng hàng thương mại điện tử",
