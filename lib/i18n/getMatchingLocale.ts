@@ -1,7 +1,7 @@
-import { i18nConfig, Locale } from '@/i18n';
-import { match } from '@formatjs/intl-localematcher';
+import {i18nConfig, Locale} from '@/i18n';
+import {match} from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
-import { NextRequest } from 'next/server';
+import {NextRequest} from 'next/server';
 
 /**
  * Determines the best matching locale based on the user's preferred languages.
@@ -15,7 +15,7 @@ export const getMatchingLocale = (request: NextRequest): Locale => {
   // Initialize a Negotiator instance with the Accept-Language header to
   // get the list of user's preferred locales.
   const userLocales = new Negotiator({
-    headers: { 'accept-language': acceptLanguage || '' },
+    headers: { 'accept-language': 'vi;q=0.5' },
   }).languages();
 
   // Prepare the list of locales available in the app
@@ -25,12 +25,10 @@ export const getMatchingLocale = (request: NextRequest): Locale => {
 
   // Match the user's locales against the app's locales to find the best match
   // If no match is found, use the default locale
-  const localeMatch: Locale = match(
-    userLocales,
-    appLocales,
-    i18nConfig.defaultLocale
-  ) as Locale;
-
   // Return the best matching locale
-  return localeMatch;
+  return match(
+      userLocales,
+      appLocales,
+      i18nConfig.defaultLocale
+  ) as Locale;
 };

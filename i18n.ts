@@ -5,6 +5,7 @@ export const i18nConfig = {
   defaultLocale: 'vi',
   // Supported locales found in @/translations directory.
   locales: ['en', 'vi'],
+  localeDetection: false,
 } as const;
 
 // Exports a type from the i18nConfig, can represent any locale in locales array.
