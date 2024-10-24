@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import {ChevronsDown, Github, Menu} from "lucide-react";
 import React from "react";
 import {
   Sheet,
@@ -9,7 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import { Separator } from "../ui/separator";
+import {Separator} from "../ui/separator";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,10 +18,11 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
-import { Button } from "../ui/button";
+import {Button} from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { ToggleTheme } from "./toogle-theme";
+import {ToggleTheme} from "./toogle-theme";
+import LocaleSelector from "@/components/layout/locale-selector";
 
 interface RouteProps {
   href: string;
@@ -32,25 +33,6 @@ interface FeatureProps {
   title: string;
   description: string;
 }
-
-const routeList: RouteProps[] = [
-  {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
-];
 
 const featureList: FeatureProps[] = [
   {
@@ -69,13 +51,40 @@ const featureList: FeatureProps[] = [
   },
 ];
 
-export const Navbar = () => {
+interface Props {
+  featureLabel: string,
+  localSelectorLabel: string,
+  contactLabel: string;
+}
+
+export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) => {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const routeList: RouteProps[] = [
+    // {
+    //   href: "#testimonials",
+    //   label: "Testimonials",
+    // },
+    {
+      href: "#team",
+      label: "Team",
+    },
+    {
+      href: "#contact",
+      label: contactLabel,
+    },
+    {
+      href: "#faq",
+      label: "FAQ",
+    },
+  ];
+
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <header
+      className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
+        <Image src={'/logo_1.png'} alt={'logo'} width={36} height={36} className={'mr-2'}/>
+        DHN
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -95,14 +104,15 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Shadcn
+                    <ChevronsDown
+                      className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"/>
+                    DHN
                   </Link>
                 </SheetTitle>
               </SheetHeader>
 
               <div className="flex flex-col gap-2">
-                {routeList.map(({ href, label }) => (
+                {routeList.map(({href, label}) => (
                   <Button
                     key={href}
                     onClick={() => setIsOpen(false)}
@@ -117,9 +127,9 @@ export const Navbar = () => {
             </div>
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
-              <Separator className="mb-2" />
+              <Separator className="mb-2"/>
 
-              <ToggleTheme />
+              <ToggleTheme/>
             </SheetFooter>
           </SheetContent>
         </Sheet>
@@ -130,7 +140,7 @@ export const Navbar = () => {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-card text-base">
-              Features
+              {featureLabel}
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
@@ -142,7 +152,7 @@ export const Navbar = () => {
                   height={600}
                 />
                 <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
+                  {featureList.map(({title, description}) => (
                     <li
                       key={title}
                       className="rounded-md p-3 text-sm hover:bg-muted"
@@ -161,7 +171,7 @@ export const Navbar = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            {routeList.map(({ href, label }) => (
+            {routeList.map(({href, label}) => (
               <NavigationMenuLink key={href} asChild>
                 <Link href={href} className="text-base px-2">
                   {label}
@@ -173,17 +183,9 @@ export const Navbar = () => {
       </NavigationMenu>
 
       <div className="hidden lg:flex">
-        <ToggleTheme />
+        <ToggleTheme/>
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
-          <Link
-            aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
-            target="_blank"
-          >
-            <Github className="size-5" />
-          </Link>
-        </Button>
+        <LocaleSelector message={localSelectorLabel}/>
       </div>
     </header>
   );

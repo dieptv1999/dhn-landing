@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { icons } from "lucide-react";
+import {Locale} from "@/i18n";
+import {getTranslation} from "@/lib/i18n/getTranslation";
 
 interface BenefitsProps {
   icon: string;
@@ -8,47 +10,46 @@ interface BenefitsProps {
   description: string;
 }
 
-const benefitList: BenefitsProps[] = [
-  {
-    icon: "Blocks",
-    title: "Build Brand Trust",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
-  },
-  {
-    icon: "LineChart",
-    title: "More Leads",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
-  },
-  {
-    icon: "Wallet",
-    title: "Higher Conversions",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
-  },
-  {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
-  },
-];
+export const BenefitsSection = async ({lang}: {lang: Locale}) => {
+  const translation = await getTranslation(lang);
 
-export const BenefitsSection = () => {
+  const benefitList: BenefitsProps[] = [
+    {
+      icon: "Blocks",
+      title: "Build Brand Trust",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+    },
+    {
+      icon: "LineChart",
+      title: "More Leads",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+    },
+    {
+      icon: "Wallet",
+      title: "Higher Conversions",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+    },
+    {
+      icon: "Sparkle",
+      title: "Test Marketing Ideas",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+    },
+  ];
   return (
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">{translation('benefit.title')}</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            {translation('benefit.description')}
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            {translation('benefit.descriptionDetail')}
           </p>
         </div>
 

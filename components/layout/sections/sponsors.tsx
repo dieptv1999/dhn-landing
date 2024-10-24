@@ -40,11 +40,15 @@ const sponsors: sponsorsProps[] = [
   },
 ];
 
-export const SponsorsSection = () => {
+interface Props {
+  title: string;
+}
+
+export const SponsorsSection = ({title}: Props) => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
       <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
+        {title}
       </h2>
 
       <div className="mx-auto">

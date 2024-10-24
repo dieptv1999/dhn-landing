@@ -1,32 +1,14 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Building2, Clock, Mail, Phone } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+import {Card, CardContent, CardFooter, CardHeader,} from "@/components/ui/card";
+import {Building2, Clock, Mail, Phone} from "lucide-react";
+import {useForm} from "react-hook-form";
+import {z} from "zod";
+import {zodResolver} from "@hookform/resolvers/zod";
+import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form";
+import {Input} from "@/components/ui/input";
+import {Button} from "@/components/ui/button";
+import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue,} from "@/components/ui/select";
+import {Textarea} from "@/components/ui/textarea";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(255),
@@ -36,23 +18,46 @@ const formSchema = z.object({
   message: z.string(),
 });
 
-export const ContactSection = () => {
+interface Props {
+  keyLabel: string;
+  title: string;
+  description: string;
+  formMessagePlaceholder: string
+  formMessage: string
+  firstNameLabel: string
+  lastNameLabel: string
+  emailPlaceholder: string
+  subjectLabel: string
+}
+
+export const ContactSection = ({
+                                 title,
+                                 keyLabel,
+                                 description,
+                                 lastNameLabel,
+                                 firstNameLabel,
+                                 subjectLabel,
+                                 formMessagePlaceholder,
+                                 formMessage,
+                                 emailPlaceholder
+                               }: Props) => {
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
       email: "",
-      subject: "Web Development",
+      subject: "Liên hệ dùng thử",
       message: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const { firstName, lastName, email, subject, message } = values;
+    const {firstName, lastName, email, subject, message} = values;
     console.log(values);
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:dhn@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -63,21 +68,20 @@ export const ContactSection = () => {
         <div>
           <div className="mb-4">
             <h2 className="text-lg text-primary mb-2 tracking-wider">
-              Contact
+              {keyLabel}
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">{title}</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            {description}
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 mb-1">
-                <Building2 />
-                <div className="font-bold">Find us</div>
+                <Building2/>
+                <div className="font-bold">Địa chỉ</div>
               </div>
 
               <div>742 Evergreen Terrace, Springfield, IL 62704</div>
@@ -85,8 +89,8 @@ export const ContactSection = () => {
 
             <div>
               <div className="flex gap-2 mb-1">
-                <Phone />
-                <div className="font-bold">Call us</div>
+                <Phone/>
+                <div className="font-bold">Số điện thoại</div>
               </div>
 
               <div>+1 (619) 123-4567</div>
@@ -94,8 +98,8 @@ export const ContactSection = () => {
 
             <div>
               <div className="flex gap-2 mb-1">
-                <Mail />
-                <div className="font-bold">Mail US</div>
+                <Mail/>
+                <div className="font-bold">Email</div>
               </div>
 
               <div>leomirandadev@gmail.com</div>
@@ -103,13 +107,13 @@ export const ContactSection = () => {
 
             <div>
               <div className="flex gap-2">
-                <Clock />
-                <div className="font-bold">Visit us</div>
+                <Clock/>
+                <div className="font-bold">Thời gian hoạt động</div>
               </div>
 
               <div>
-                <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>Thứ 2 - Thứ 6</div>
+                <div>9AM - 6PM</div>
               </div>
             </div>
           </div>
@@ -127,26 +131,26 @@ export const ContactSection = () => {
                   <FormField
                     control={form.control}
                     name="firstName"
-                    render={({ field }) => (
+                    render={({field}) => (
                       <FormItem className="w-full">
-                        <FormLabel>First Name</FormLabel>
+                        <FormLabel>{firstNameLabel}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="Nguyễn Văn" {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage/>
                       </FormItem>
                     )}
                   />
                   <FormField
                     control={form.control}
                     name="lastName"
-                    render={({ field }) => (
+                    render={({field}) => (
                       <FormItem className="w-full">
-                        <FormLabel>Last Name</FormLabel>
+                        <FormLabel>{lastNameLabel}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="A" {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage/>
                       </FormItem>
                     )}
                   />
@@ -156,17 +160,17 @@ export const ContactSection = () => {
                   <FormField
                     control={form.control}
                     name="email"
-                    render={({ field }) => (
+                    render={({field}) => (
                       <FormItem>
                         <FormLabel>Email</FormLabel>
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="leomirandadev@gmail.com"
+                            placeholder={emailPlaceholder}
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage/>
                       </FormItem>
                     )}
                   />
@@ -176,16 +180,16 @@ export const ContactSection = () => {
                   <FormField
                     control={form.control}
                     name="subject"
-                    render={({ field }) => (
+                    render={({field}) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel>{subjectLabel}</FormLabel>
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Select a subject" />
+                              <SelectValue placeholder="Chọn chủ đề"/>
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -204,7 +208,7 @@ export const ContactSection = () => {
                             </SelectItem>
                           </SelectContent>
                         </Select>
-                        <FormMessage />
+                        <FormMessage/>
                       </FormItem>
                     )}
                   />
@@ -214,25 +218,25 @@ export const ContactSection = () => {
                   <FormField
                     control={form.control}
                     name="message"
-                    render={({ field }) => (
+                    render={({field}) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>Nội dung</FormLabel>
                         <FormControl>
                           <Textarea
                             rows={5}
-                            placeholder="Your message..."
+                            placeholder={formMessagePlaceholder}
                             className="resize-none"
                             {...field}
                           />
                         </FormControl>
 
-                        <FormMessage />
+                        <FormMessage/>
                       </FormItem>
                     )}
                   />
                 </div>
 
-                <Button className="mt-4">Send message</Button>
+                <Button className="mt-4">Gửi yêu cầu đến chúng tôi</Button>
               </form>
             </Form>
           </CardContent>

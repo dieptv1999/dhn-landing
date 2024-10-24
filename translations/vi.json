@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "localeSelector": {
+      "message": "Chọn ngôn ngữ."
+    },
+    "feature": "Tính năng",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "getStarted": "Bắt đầu ngay",
+    "contact": "Liên hệ",
+    "description": "Chúng tôi không chỉ là một công cụ mà còn là một cộng đồng gồm những người sáng tạo đầy nhiệt huyết. Có quyền truy cập vào các tài nguyên, hướng dẫn và hỗ trợ độc quyền.",
+    "highlight": "15Gb miễn phí ngay"
+  },
+  "partner": {
+    "title": "Đối tác của chúng tôi"
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp"
+  },
+  "contact": {
+    "key": "Liên hệ",
+    "title": "Kết nối với chúng tôi",
+    "description": "Bạn chỉ cần tập trung vào việc bạn làm tốt nhất – phát triển doanh nghiệp và mang đến sản phẩm tuyệt vời – trong khi chúng tôi đảm nhận công việc nhà kho cho bạn.",
+    "form": {
+      "firstName": "Họ",
+      "lastName": "Tên",
+      "emailPlaceholder": "dhn@gmail.com",
+      "subject": "Chủ đề",
+      "message": "Nội dung",
+      "messagePlaceholder": "Nhập nội dung yêu cầu..."
+    }
+  },
+  "footer": {
+    "trContact": "Liên hệ",
+    "trPlatform": "Nền tảng",
+    "trHelp": "Trợ giúp",
+    "trSocial": "Mạng xã hội",
+    "tdHelpContactUs": "Liên hệ chúng tôi",
+    "tdHelpFeedback": "Phản hồi"
+  },
+  "benefit": {
+    "title": "Lợi ích khi đến với chúng tôi",
+    "description": "Dịch vụ hậu cần đơn hàng từ A-Z",
+    "descriptionDetail": "Fulfillment – Dịch vụ hoàn tất đơn hàng là xu hướng trong E-commerce giúp doanh nghiệp tiết kiệm nguồn lực, chi phí vận hành kho và vận chuyển hàng hoá, giúp doanh nghiệp của bạn tập trung phát triển kinh doanh, cải thiện dịch vụ khách hàng."
+  },
+  "feature": {
+    "title": "Các tính năng",
+    "subTitle": "Điều gì làm chúng tôi khác biệt"
+  },
+  "testimonials": {
+    "title": "Nhận xét về chúng tôi",
+    "subTitle": "Hãy lắng nghe hơn 100+ khách hàng của chúng tôi nói gì"
+  },
+  "team": {
+    "title": "Đội ngũ của chúng tôi",
+    "subTitle": "Đưa những tính năng tốt nhất đến với khách hàng"
+  }
+}

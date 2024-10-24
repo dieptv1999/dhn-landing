@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "localeSelector": {
+      "message": "Choose a language."
+    },
+    "feature": "Features",
+    "contact": "Contact"
+  },
+  "hero": {
+    "getStarted": "Get Started",
+    "contact": "Contact",
+    "description": "We're more than just a tool, we're a community of passionate creators. Get access to exclusive resources, tutorials, and support.",
+    "highlight": "15Gb free now"
+  },
+  "partner": {
+    "title": "Our partners"
+  },
+  "faq": {
+    "title": "Common Questions"
+  },
+  "contact": {
+    "key": "Contact",
+    "title": "Connect With Us",
+    "description": "You just focus on what you do best – growing your business and delivering great products – while we take care of the warehouse work for you.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "emailPlaceholder": "dhn@gmail.com",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Your message..."
+    }
+  },
+  "footer": {
+    "trContact": "Contact",
+    "trPlatform": "Platforms",
+    "trHelp": "Help",
+    "trSocial": "Socials",
+    "tdHelpContactUs": "Contact Us",
+    "tdHelpFeedback": "Feedback"
+  },
+  "benefit": {
+    "title": "Benefits",
+    "description": "Order logistics service from A-Z",
+    "descriptionDetail": "Fulfillment - Order fulfillment service is a trend in E-commerce that helps businesses save resources, warehouse operating costs and shipping goods, helping your business focus on business development and improving customer service."
+  },
+  "feature": {
+    "title": "Features",
+    "subTitle": "What Makes Us Different"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subTitle": "Hear What Our 100+ Clients Say"
+  },
+  "team": {
+    "title": "Dream Team",
+    "subTitle": "The Company Dream Team"
+  }
+}

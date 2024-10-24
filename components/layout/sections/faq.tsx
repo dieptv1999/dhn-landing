@@ -43,7 +43,11 @@ const FAQList: FAQProps[] = [
   },
 ];
 
-export const FAQSection = () => {
+interface Props {
+  title: string
+}
+
+export const FAQSection = ({title}: Props) => {
   return (
     <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
       <div className="text-center mb-8">
@@ -52,7 +56,7 @@ export const FAQSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          Common Questions
+          {title}
         </h2>
       </div>
 

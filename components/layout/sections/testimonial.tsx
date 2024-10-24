@@ -1,5 +1,4 @@
-"use client";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import {
   Card,
   CardContent,
@@ -14,7 +13,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Star } from "lucide-react";
+import {Star} from "lucide-react";
+import {Locale} from "@/i18n";
+import {getTranslation} from "@/lib/i18n/getTranslation";
 
 interface ReviewProps {
   image: string;
@@ -76,16 +77,18 @@ const reviewList: ReviewProps[] = [
   },
 ];
 
-export const TestimonialSection = () => {
+export const TestimonialSection = async ({lang}: { lang: Locale }) => {
+  const translation = await getTranslation(lang);
+
   return (
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
+          {translation('testimonials.title')}
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          {translation('testimonials.subTitle')}
         </h2>
       </div>
 
@@ -104,11 +107,11 @@ export const TestimonialSection = () => {
               <Card className="bg-muted/50 dark:bg-card">
                 <CardContent className="pt-6 pb-0">
                   <div className="flex gap-1 pb-6">
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
+                    <Star className="size-4 fill-primary text-primary"/>
+                    <Star className="size-4 fill-primary text-primary"/>
+                    <Star className="size-4 fill-primary text-primary"/>
+                    <Star className="size-4 fill-primary text-primary"/>
+                    <Star className="size-4 fill-primary text-primary"/>
                   </div>
                   {`"${review.comment}"`}
                 </CardContent>
@@ -133,8 +136,8 @@ export const TestimonialSection = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious/>
+        <CarouselNext/>
       </Carousel>
     </section>
   );
