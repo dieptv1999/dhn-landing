@@ -22,12 +22,12 @@ export const metadata = {
   description: "Giải pháp quay video đóng hàng thương mại điện tử",
   openGraph: {
     type: "website",
-    url: "/preview.jpg",
+    url: "https://github.com/nobruf/shadcn-landing-page.git",
     title: "Giải pháp quay video đóng hàng thương mại điện tử",
     description: "Giải pháp quay video đóng hàng thương mại điện tử",
     images: [
       {
-        url: "/preview.jpg",
+        url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
         alt: "Giải pháp quay video đóng hàng thương mại điện tử",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Giải pháp quay video đóng hàng thương mại điện tử",
     description: "Giải pháp quay video đóng hàng thương mại điện tử",
     images: [
-      "/preview.jpg",
+      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],
   },
 };
