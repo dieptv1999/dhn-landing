@@ -20,7 +20,7 @@ export default function middleware(request: NextRequest) {
 
     // Return new url redirect and redirect user to correct locale url.
     return NextResponse.redirect(
-      new URL(`/${newLocale}/${request.nextUrl.pathname}`, request.url)
+      new URL(`/${newLocale}${request.nextUrl.pathname}`, request.url)
     );
   }
 }

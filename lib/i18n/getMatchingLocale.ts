@@ -10,7 +10,7 @@ import {NextRequest} from 'next/server';
  */
 export const getMatchingLocale = (request: NextRequest): Locale => {
   // Extract the Accept-Language header from the request
-  const acceptLanguage = request.headers.get('Accept-Language');
+  // const acceptLanguage = request.headers.get('Accept-Language');
 
   // Initialize a Negotiator instance with the Accept-Language header to
   // get the list of user's preferred locales.
