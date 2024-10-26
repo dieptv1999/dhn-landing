@@ -4,12 +4,12 @@ import axios, {AxiosResponse, HttpStatusCode} from "axios";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
 import ArticleSkeleton from "@/components/news/article-skeleton";
 import ArticleCard from "@/components/news/article.card";
-import {useToast} from "@/hooks/use-toast";
 import ListTopic from "@/components/news/list-topic";
 import ListNotfound from "@/components/list-notfound";
 import CustomPagination from "@/components/pagination";
 import {RepositoryFactory} from "@/api/repository-factory";
 import throttle from "lodash.throttle";
+import {useToast} from "@/hooks/use-toast";
 
 const ArticleRepository = RepositoryFactory.get('article')
 
@@ -87,7 +87,7 @@ export default function ListNews() {
     }, [searchParams]);
 
     return (
-        <div className={'max-w-screen-xl w-full my-3 md:my-8 flex flex-col md:flex-row gap-6'}>
+        <div className={'max-w-screen-xl w-full my-3 flex flex-col md:flex-row gap-6'}>
             <div className={'grid grid-cols-1 gap-4 flex-1'}>
                 <ListTopic />
                 {loading ?
