@@ -57,7 +57,7 @@ export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) 
       label: contactLabel,
     },
     {
-      href: "https://donghangnhanh.vn/baiviet",
+      href: "/baiviet",
       label: 'Bài viết',
     },
     {

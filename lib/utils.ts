@@ -1,5 +1,6 @@
 import {type ClassValue, clsx} from "clsx"
 import {twMerge} from "tailwind-merge"
+import {format} from "date-fns";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -22,3 +23,8 @@ export type ObjectKeys<
       `${Key}`
     : // Return nothing.
     never;
+
+export const formatCreatedDate = (createdAt: Date | undefined) => {
+  if (!createdAt) return ''
+  return format(new Date(), 'dd/MM/yyyy HH:mm')
+}
