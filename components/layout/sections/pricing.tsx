@@ -25,22 +25,23 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Miễn phí",
     popular: 0,
     price: 0,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+    buttonText: "Bắt đầu dùng thử",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      "10GB dung lượng",
+      "1 người dùng",
+      "1 cửa hàng",
+      "Khung hình 2 camera",
+      "Lưu video 20 ngày",
+      "Thời lượng 1 video: 5 phút",
     ],
   },
   {
-    title: "Premium",
+    title: "Stardard",
     popular: 1,
     price: 45,
     description:
@@ -73,9 +74,9 @@ const plans: PlanProps[] = [
 
 export const PricingSection = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section id={'pricing'} className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        Bảng giá
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">

@@ -7,7 +7,7 @@ import {getTranslation} from "@/lib/i18n/getTranslation";
 interface BenefitsProps {
   icon: string;
   title: string;
-  description: string;
+  description: any;
 }
 
 export const BenefitsSection = async ({lang}: {lang: Locale}) => {
@@ -15,28 +15,28 @@ export const BenefitsSection = async ({lang}: {lang: Locale}) => {
 
   const benefitList: BenefitsProps[] = [
     {
-      icon: "Blocks",
-      title: "Build Brand Trust",
+      icon: "CircleDollarSign",
+      title: "Mất hàng mất tiền",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+        'Mất hàng mất tiền từ những đơn trả hàng mà khiếu nại thua',
     },
     {
-      icon: "LineChart",
-      title: "More Leads",
+      icon: "ArrowLeftRight",
+      title: "Tráo hàng",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+        "Người mua hàng đánh tráo sản phẩm và trả hàng",
     },
     {
-      icon: "Wallet",
-      title: "Higher Conversions",
+      icon: "StarOff",
+      title: "Bị đánh giá thấp",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+        "Shop bị đánh giá thấp do nhân viên đóng thiếu hoặc sai đơn hàng",
     },
     {
-      icon: "Sparkle",
-      title: "Test Marketing Ideas",
+      icon: "Scale",
+      title: "Bằng chứng giao hàng",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+        "Không có bằng chứng giao hàng cho shipper với đơn thất lạc",
     },
   ];
   return (
@@ -48,7 +48,7 @@ export const BenefitsSection = async ({lang}: {lang: Locale}) => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {translation('benefit.description')}
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-xl text-muted-foreground mb-8 text-start">
             {translation('benefit.descriptionDetail')}
           </p>
         </div>

@@ -34,23 +34,6 @@ interface FeatureProps {
   description: string;
 }
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
-  },
-];
-
 interface Props {
   featureLabel: string,
   localSelectorLabel: string,
@@ -61,17 +44,21 @@ export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) 
   const [isOpen, setIsOpen] = React.useState(false);
 
   const routeList: RouteProps[] = [
-    // {
-    //   href: "#testimonials",
-    //   label: "Testimonials",
-    // },
     {
-      href: "#team",
-      label: "Team",
+      href: "#features",
+      label: "Tính năng",
+    },
+    {
+      href: "#pricing",
+      label: "Bảng giá",
     },
     {
       href: "#contact",
       label: contactLabel,
+    },
+    {
+      href: "https://donghangnhanh.vn/baiviet",
+      label: 'Bài viết',
     },
     {
       href: "#faq",
@@ -142,37 +129,37 @@ export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) 
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              {featureLabel}
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({title, description}) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+          {/*<NavigationMenuItem>*/}
+          {/*  <NavigationMenuTrigger className="bg-card text-base">*/}
+          {/*    {featureLabel}*/}
+          {/*  </NavigationMenuTrigger>*/}
+          {/*  <NavigationMenuContent>*/}
+          {/*    <div className="grid w-[600px] grid-cols-2 gap-5 p-4">*/}
+          {/*      <Image*/}
+          {/*        src="https://avatars.githubusercontent.com/u/75042455?v=4"*/}
+          {/*        alt="RadixLogo"*/}
+          {/*        className="h-full w-full rounded-md object-cover"*/}
+          {/*        width={600}*/}
+          {/*        height={600}*/}
+          {/*      />*/}
+          {/*      <ul className="flex flex-col gap-2">*/}
+          {/*        {featureList.map(({title, description}) => (*/}
+          {/*          <li*/}
+          {/*            key={title}*/}
+          {/*            className="rounded-md p-3 text-sm hover:bg-muted"*/}
+          {/*          >*/}
+          {/*            <p className="mb-1 font-semibold leading-none text-foreground">*/}
+          {/*              {title}*/}
+          {/*            </p>*/}
+          {/*            <p className="line-clamp-2 text-muted-foreground">*/}
+          {/*              {description}*/}
+          {/*            </p>*/}
+          {/*          </li>*/}
+          {/*        ))}*/}
+          {/*      </ul>*/}
+          {/*    </div>*/}
+          {/*  </NavigationMenuContent>*/}
+          {/*</NavigationMenuItem>*/}
 
           <NavigationMenuItem>
             {routeList.map(({href, label}) => (

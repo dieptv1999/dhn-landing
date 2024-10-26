@@ -27,52 +27,52 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image: "/shop/shop_bep_xinh.jpeg",
+    name: "Shop Bếp Xinh 247 - Đồ gia dụng",
+    userName: "Chủ cửa hàng",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Giải pháp rất hay, nhân viên của shop mình giờ không còn đóng thiếu hàng cho khách nữa. Có thiết bị giám sát là các bạn đóng gói cẩn thận hơn.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    image: "/shop/me_nhim.jpeg",
+    name: "Shop Mẹ Nhím - Đồ bỉm sửa",
+    userName: "Chủ cửa hàng",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "Phần mềm dễ dùng lắm, không mất thời gian mà lại hiệu quả. Tôi giới thiệu thêm cho mấy shop cùng chung cư dùng rồi",
     rating: 4.8,
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    image: "/shop/thu_cung.jpg",
+    name: "Shop PetHome - Đồ thú cưng",
+    userName: "Chủ cửa hàng",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Tưởng đâu phải camera xịn mới quay được, DHN có giải pháp 2 camera rất tiện lợi mà không mất nhiều chi phí mua camera đắt tiền",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    image: "/shop/changhhie.jpg",
+    name: "Shop ChangHie - Thời trang nữ",
+    userName: "Chủ cửa hàng",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Từ giờ không lo đơn bị tráo hàng nữa, trộm vía shop mình chưa thua kiện lần nào",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    image: "/shop/phukien.jpg",
+    name: "Phụ kiện công nghệ Itech",
+    userName: "Chủ cửa hàng",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "May mà có phần mềm, không thì tra camera an ninh nhìn lòi mắt không thấy được mã đơn, tra cứu rất tiện",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    image: "/shop/teashoes.jpg",
+    name: "Teashoes - Giầy thời trang",
+    userName: "Chủ cửa hàng",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Shop mình hàng tháng 3000 đơn, nếu không có phần mềm thì không kiểm soát hết được đơn nào đóng rồi đơn nào chưa, mà ai đóng thiếu đóng sai là biết ngay. Quản lý rất hiệu quả",
     rating: 4.9,
   },
 ];
@@ -120,7 +120,7 @@ export const TestimonialSection = async ({lang}: { lang: Locale }) => {
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
                       <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
+                        src={review.image}
                         alt="radix"
                       />
                       <AvatarFallback>SV</AvatarFallback>

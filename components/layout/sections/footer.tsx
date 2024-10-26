@@ -26,20 +26,20 @@ export const FooterSection = async ({ lang }: Props) => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">{translation('footer.trContact')}</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="https://www.facebook.com/profile.php?id=61566379889600" className="opacity-60 hover:opacity-100">
                 Facebook
               </Link>
             </div>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Tiktok
-              </Link>
-            </div>
+            {/*<div>*/}
+            {/*  <Link href="#" className="opacity-60 hover:opacity-100">*/}
+            {/*    Tiktok*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
+              <Link href="https://www.youtube.com/@dhnvn" className="opacity-60 hover:opacity-100">
+                Youtube
               </Link>
             </div>
           </div>
@@ -59,22 +59,22 @@ export const FooterSection = async ({ lang }: Props) => {
             {/*</div>*/}
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="https://dhn.io.vn/" className="opacity-60 hover:opacity-100">
                 Web
-              </Link>
+              </Link>na
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">{translation('footer.trHelp')}</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="#contact" className="opacity-60 hover:opacity-100">
                 {translation('footer.tdHelpContactUs')}
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="#faq" className="opacity-60 hover:opacity-100">
                 FAQ
               </Link>
             </div>
@@ -86,26 +86,26 @@ export const FooterSection = async ({ lang }: Props) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">{translation('footer.trSocial')}</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Facebook
-              </Link>
-            </div>
+          {/*<div className="flex flex-col gap-2">*/}
+          {/*  <h3 className="font-bold text-lg">{translation('footer.trSocial')}</h3>*/}
+          {/*  <div>*/}
+          {/*    <Link href="#" className="opacity-60 hover:opacity-100">*/}
+          {/*      Facebook*/}
+          {/*    </Link>*/}
+          {/*  </div>*/}
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Zalo
-              </Link>
-            </div>
+          {/*  <div>*/}
+          {/*    <Link href="#" className="opacity-60 hover:opacity-100">*/}
+          {/*      Zalo*/}
+          {/*    </Link>*/}
+          {/*  </div>*/}
 
-            {/*<div>*/}
-            {/*  <Link href="#" className="opacity-60 hover:opacity-100">*/}
-            {/*    Dribbble*/}
-            {/*  </Link>*/}
-            {/*</div>*/}
-          </div>
+          {/*  /!*<div>*!/*/}
+          {/*  /!*  <Link href="#" className="opacity-60 hover:opacity-100">*!/*/}
+          {/*  /!*    Dribbble*!/*/}
+          {/*  /!*  </Link>*!/*/}
+          {/*  /!*</div>*!/*/}
+          {/*</div>*/}
         </div>
 
         <Separator className="my-6"/>

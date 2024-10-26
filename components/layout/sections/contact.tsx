@@ -84,7 +84,7 @@ export const ContactSection = ({
                 <div className="font-bold">Địa chỉ</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+              <div>Số 71, ngõ 487 Cổ Nhuế, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</div>
             </div>
 
             <div>
@@ -93,7 +93,7 @@ export const ContactSection = ({
                 <div className="font-bold">Số điện thoại</div>
               </div>
 
-              <div>+1 (619) 123-4567</div>
+              <div>0788624968</div>
             </div>
 
             <div>
@@ -102,7 +102,7 @@ export const ContactSection = ({
                 <div className="font-bold">Email</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div>donghangnhanh@gmail.com</div>
             </div>
 
             <div>

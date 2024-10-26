@@ -16,39 +16,39 @@ export const FeaturesSection = async ({lang}: {lang: Locale}) => {
   const featureList: FeaturesProps[] = [
     {
       icon: "TabletSmartphone",
-      title: "Mobile Friendly",
+      title: "Đa nền tảng",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+        "Tương thích iOS, Android, Windows.. Không quan trọng cấu hình. Có hỗ trợ máy quét",
     },
     {
-      icon: "BadgeCheck",
-      title: "Social Proof",
+      icon: "SearchCheck",
+      title: "Tìm kiếm nhanh chóng",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+        "Trích xuất và tải về nhanh chóng theo mã vận đơn. Video khiếu nại đủ tiêu chuẩn của sàn TMĐT",
     },
     {
-      icon: "Goal",
-      title: "Targeted Content",
+      icon: "Cctv",
+      title: "2 camera đồng thời",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+        "Camera chính toàn cảnh đóng hàng, 1 camera soi mã vận đơn",
     },
     {
-      icon: "PictureInPicture",
-      title: "Strong Visuals",
+      icon: "Store",
+      title: "Quản lý đa kho",
       description:
-        "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+        "Chủ sở hữu có thể quản lý nhiều kho hàng với nhiều nhân viên (quản lý phân quyền) trong một kho.",
     },
     {
-      icon: "MousePointerClick",
-      title: "Clear CTA",
+      icon: "Undo2",
+      title: "Quản lý đơn hoàn",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+        "Quay kiện hàng hoàn kiểm tra nguyên vẹn của sản phẩm.",
     },
     {
-      icon: "Newspaper",
-      title: "Clear Headline",
+      icon: "Truck",
+      title: "Quản lý gửi vận chuyển",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+        "Lưu lại bằng chứng đã bàn giao các đơn hàng cho đơn vị vận chuyển",
     },
   ];
   return (
@@ -57,15 +57,15 @@ export const FeaturesSection = async ({lang}: {lang: Locale}) => {
         {translation('feature.title')}
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
         {translation('feature.subTitle')}
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
-      </h3>
+      {/*<h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">*/}
+      {/*  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem*/}
+      {/*  fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio*/}
+      {/*  facere tenetur.*/}
+      {/*</h3>*/}
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {featureList.map(({ icon, title, description }) => (

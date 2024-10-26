@@ -8,8 +8,8 @@
   },
   "hero": {
     "getStarted": "Bắt đầu ngay",
-    "contact": "Liên hệ",
-    "description": "Chúng tôi không chỉ là một công cụ mà còn là một cộng đồng gồm những người sáng tạo đầy nhiệt huyết. Có quyền truy cập vào các tài nguyên, hướng dẫn và hỗ trợ độc quyền.",
+    "contact": "Đăng ký ngay",
+    "description": "Giải pháp quay video và lưu trữ online từng đơn hàng cực nhanh và dễ dàng. Tra cứu đơn video đơn hàng trên tất cả các thiết bị chỉ mất 2s. Video khiếu nại đầy đủ thông tin tiêu chuẩn của các sàn TMĐT",
     "highlight": "15Gb miễn phí ngay"
   },
   "partner": {
@@ -40,9 +40,9 @@
     "tdHelpFeedback": "Phản hồi"
   },
   "benefit": {
-    "title": "Lợi ích khi đến với chúng tôi",
-    "description": "Dịch vụ hậu cần đơn hàng từ A-Z",
-    "descriptionDetail": "Fulfillment – Dịch vụ hoàn tất đơn hàng là xu hướng trong E-commerce giúp doanh nghiệp tiết kiệm nguồn lực, chi phí vận hành kho và vận chuyển hàng hoá, giúp doanh nghiệp của bạn tập trung phát triển kinh doanh, cải thiện dịch vụ khách hàng."
+    "title": "Những vấn đề nhà bán hàng đang gặp phải",
+    "description": "Mất quá nhiều chi phí từ những đơn trả hàng",
+    "descriptionDetail": "Hiện nay với chính sách bán hàng ưu tiên người mua hàng của một số sàn thương mại điện tử, các shop đang gặp phải rất nhiều tình trạng khách nhận hàng và sử dụng sau đó hoàn trả. Một số shop còn bị tráo hàng, hàng trả về là mảnh vải, cục đá,.."
   },
   "feature": {
     "title": "Các tính năng",

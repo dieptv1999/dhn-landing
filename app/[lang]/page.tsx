@@ -68,14 +68,14 @@ export default async function Home({params: {lang}}: Props) {
         contactButtonLabel={translation('hero.contact')}
         highlightLabel={translation('hero.highlight')}
       />
-      <SponsorsSection
-        title={translation('partner.title')}
-      />
+      {/*<SponsorsSection*/}
+      {/*  title={translation('partner.title')}*/}
+      {/*/>*/}
       <BenefitsSection lang={lang}/>
       <FeaturesSection lang={lang}/>
       <ServicesSection/>
       <TestimonialSection lang={lang}/>
-      <TeamSection lang={lang}/>
+      {/*<TeamSection lang={lang}/>*/}
       <CommunitySection/>
       <PricingSection/>
       <ContactSection
