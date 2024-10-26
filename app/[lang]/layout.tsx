@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Giải pháp quay video đóng hàng thương mại điện tử",
   description: "Giải pháp quay video đóng hàng thương mại điện tử",
   icons: {
-    icon: '/favicon.svg?v=2'
+    icon: '/favicon.ico?v=2'
   },
   abstract: 'Giải pháp quay video đóng hàng TMĐT',
   classification: 'Giải pháp quay video đóng hàng TMĐT',
