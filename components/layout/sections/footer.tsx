@@ -61,7 +61,7 @@ export const FooterSection = async ({ lang }: Props) => {
             <div>
               <Link href="https://dhn.io.vn/" className="opacity-60 hover:opacity-100">
                 Web
-              </Link>na
+              </Link>
             </div>
           </div>
 
