@@ -6,6 +6,10 @@ module.exports = {
             instances: '1', // Or a number of instances
             script: 'node_modules/next/dist/bin/next',
             args: 'start',
+            env: {
+                NODE_ENV: "production",
+                PORT: 3002
+            }
         }
     ]
 }
