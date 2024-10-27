@@ -65,7 +65,7 @@ const serviceList: ServiceProps[] = [
     {
         title: "Truy xuất nhanh",
         description: "Dễ dàng gen link trực tiếp gửi khiếu nại đến các nền tảng thương mại điện tử Shopee, Lazada, Tiktok Shop",
-        image: '/usage/t4.jpeg',
+        image: '/usage/t4.png',
         reverse: true,
     },
 ];
