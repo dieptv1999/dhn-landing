@@ -1,4 +1,5 @@
 import { i18nConfig, Locale } from '@/i18n';
+import {Locate} from "lucide-react";
 
 // Import translation files manually from @/translations path as modules
 const translations = {
@@ -21,5 +22,5 @@ export type TranslationObject = Awaited<
 export const loadTranslation = async (
   locale: Locale
 ): Promise<TranslationObject> => {
-  return translations[locale]();
+  return translations[locale] ? translations[locale]() : translations['vi']();
 };

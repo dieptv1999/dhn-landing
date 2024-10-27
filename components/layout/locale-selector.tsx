@@ -49,7 +49,7 @@ export default function LocaleSelector({message}: Props) {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" size={'icon'}>
+          <Button variant="ghost" size={'icon'} aria-label={'select language'}>
             <LanguageIcon/>
           </Button>
         </DropdownMenuTrigger>

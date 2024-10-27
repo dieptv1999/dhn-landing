@@ -36,7 +36,8 @@ export default function ListTopic() {
             {topics.map(e => (
                 <Badge
                     variant="secondary"
-                    className={`px-1 md:px-3 md:py-1 cursor-pointer whitespace-nowrap hover:!bg-primary max-h-6 ${e === topic ? 'bg-primary text-white' : ''}`} key={e}
+                    className={`px-1 md:px-3 md:py-1 cursor-pointer whitespace-nowrap hover:!bg-primary max-h-6 ${e === topic ? 'bg-primary text-white' : ''}`}
+                    key={e}
                     onClick={() => {
                         goto(e)
                     }}

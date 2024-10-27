@@ -45,15 +45,15 @@ export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) 
 
   const routeList: RouteProps[] = [
     {
-      href: "#features",
+      href: "/#features",
       label: "Tính năng",
     },
     {
-      href: "#pricing",
+      href: "/#pricing",
       label: "Bảng giá",
     },
     {
-      href: "#contact",
+      href: "/#contact",
       label: contactLabel,
     },
     {
@@ -61,7 +61,7 @@ export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) 
       label: 'Bài viết',
     },
     {
-      href: "#faq",
+      href: "/#faq",
       label: "FAQ",
     },
   ];

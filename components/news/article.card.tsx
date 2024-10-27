@@ -2,7 +2,7 @@ import Image from "next/image";
 import {formatCreatedDate} from "@/lib/utils";
 import Link from "next/link";
 
-export default function ArticleCard({article, key}: { article: any, key: string }) {
+export default function ArticleCard({article}: { article: any }) {
 
     const getTagsFirst = (tags: string[] | undefined) => {
         if (!tags) return '';
