@@ -30,7 +30,7 @@ export const CommunitySection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Tham gia cùng chúng tôi. Nhanh tay để nhận ngay ưu đãi khi dùng sản phẩm với 10GB miễn phí trong tháng đầu tiên!. Nhấn vào đây để tiếp tục 🚀
+              Nhanh tay đăng ký để nhận ưu đãi miễn phí trải nghiệm tháng đầu tiên, giảm thất thoát chi phí ngày hôm nay! 🚀
             </CardContent>
 
             <CardFooter>

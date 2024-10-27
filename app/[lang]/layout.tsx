@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Giải pháp quay video đóng hàng thương mại điện tử',
     description: "Giải pháp quay video đóng hàng thương mại điện tử",
     images: {
-      url: 'https://donghangnhanh.vn/preview.jpg',
+      url: 'https://donghangnhanh.vn/preview.jpeg',
       width: 600,
       height: 315
     }

@@ -11,6 +11,7 @@ import {getTranslation} from "@/lib/i18n/getTranslation";
 import {Navbar} from "@/components/layout/navbar";
 import React from "react";
 import dynamic from "next/dynamic";
+import BannerCenterSection from "@/components/layout/sections/banner-center";
 
 const UsageSection = dynamic(() => import("@/components/layout/sections/usage").then(mod => mod.UsageSection), {ssr: false});
 const TestimonialSection = dynamic(() => import("@/components/layout/sections/testimonial").then(mod => mod.TestimonialSection), {ssr: false});
@@ -45,6 +46,7 @@ export default async function Home({params: {lang}}: Props) {
             {/*/>*/}
             <BenefitsSection lang={lang}/>
             <FeaturesSection lang={lang}/>
+            <BannerCenterSection />
             {/*<ServicesSection/>*/}
             <UsageSection/>
             <TestimonialSection
