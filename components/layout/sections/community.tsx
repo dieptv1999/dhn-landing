@@ -7,6 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
+import React from "react";
+import Link from "next/link";
 
 export const CommunitySection = () => {
   return (
@@ -16,26 +19,25 @@ export const CommunitySection = () => {
         <div className="lg:w-[60%] mx-auto">
           <Card className="bg-background border-none shadow-none text-center flex flex-col items-center justify-center">
             <CardHeader>
-              <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center">
-                <DiscordIcon />
+              <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center gap-3">
+                <Image src={'/logo_1.png'} alt={'logo'} width={66} height={66} className={'mr-2'}/>
                 <div>
-                  Ready to join this
+                  Bạn đã sẵn sàng cải thiện quy trình đóng gói cùng
                   <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                    Community?
+                    DHN?
                   </span>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Join our vibrant Discord community! Connect, share, and grow with
-              like-minded enthusiasts. Click to dive in! 🚀
+              Tham gia cùng chúng tôi. Nhanh tay để nhận ngay ưu đãi khi dùng sản phẩm với 10GB miễn phí trong tháng đầu tiên!. Nhấn vào đây để tiếp tục 🚀
             </CardContent>
 
             <CardFooter>
               <Button asChild>
-                <a href="https://discord.com/" target="_blank">
-                  Join Discord
-                </a>
+                <Link href="#contact">
+                  Đăng ký ngay
+                </Link>
               </Button>
             </CardFooter>
           </Card>
