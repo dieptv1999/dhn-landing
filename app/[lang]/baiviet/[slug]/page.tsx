@@ -62,7 +62,11 @@ export async function generateMetadata(
             description: article.subTitle,
         },
         alternates: {
-            canonical: `https://homeei.com/news/${article.slug}`,
+            canonical: `https://donghangnhanh.vn/baiviet/${article.slug}`,
+            languages: {
+                'en': `https://donghangnhanh.vn/en/baiviet/${article.slug}`,
+                'vi': `https://donghangnhanh.vn/vi/baiviet/${article.slug}`,
+            },
         },
         category: 'batdongsan',
     }
