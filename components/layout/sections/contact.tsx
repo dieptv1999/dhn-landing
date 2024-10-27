@@ -188,7 +188,7 @@ export const ContactSection = ({
                           defaultValue={field.value}
                         >
                           <FormControl>
-                            <SelectTrigger>
+                            <SelectTrigger aria-label={'select subject'}>
                               <SelectValue placeholder="Chọn chủ đề"/>
                             </SelectTrigger>
                           </FormControl>

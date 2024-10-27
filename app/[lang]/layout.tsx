@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://donghangnhanh.vn',
     languages: {
-      'en': 'https://donghangnhanh.vn/en',
-      'vi': 'https://donghangnhanh.vn/vi',
+      'en-us': 'https://donghangnhanh.vn/en',
+      'vi-vn': 'https://donghangnhanh.vn/vi',
     },
   },
   category: 'video, TMĐT',

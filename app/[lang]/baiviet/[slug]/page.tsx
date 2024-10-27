@@ -64,8 +64,8 @@ export async function generateMetadata(
         alternates: {
             canonical: `https://donghangnhanh.vn/baiviet/${article.slug}`,
             languages: {
-                'en': `https://donghangnhanh.vn/en/baiviet/${article.slug}`,
-                'vi': `https://donghangnhanh.vn/vi/baiviet/${article.slug}`,
+                'en-us': `https://donghangnhanh.vn/en/baiviet/${article.slug}`,
+                'vi-vn': `https://donghangnhanh.vn/vi/baiviet/${article.slug}`,
             },
         },
         category: 'batdongsan',

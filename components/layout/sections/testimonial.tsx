@@ -4,6 +4,7 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle,} from "@/comp
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,} from "@/components/ui/carousel";
 import {Star} from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 interface ReviewProps {
     image: string;
@@ -114,9 +115,12 @@ export const TestimonialSection = ({title, subTitle}: Props) => {
                                     <div className="flex flex-row items-center gap-4">
                                         <Avatar>
                                             <AvatarImage
+                                                asChild
                                                 src={review.image}
-                                                alt="radix"
-                                            />
+                                                alt={review.name}
+                                            >
+                                                <Image src={review.image} alt={review.name} width={40} height={40} />
+                                            </AvatarImage>
                                             <AvatarFallback>SV</AvatarFallback>
                                         </Avatar>
 
