@@ -24,6 +24,9 @@ const nextConfig = {
             }, {
                 protocol: "https",
                 hostname: "img.iproperty.com.my",
+            },{
+                protocol: "http",
+                hostname: "localhost",
             },
         ],
     },

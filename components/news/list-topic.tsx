@@ -8,10 +8,10 @@ export default function ListTopic() {
     const topic = searchParams.get('topic')
 
     const topics = [
-        'Thị trường',
-        'Chính sách',
-        'Dự án',
-        'Không gian sống'
+        'Bán hàng',
+        'Đóng hàng',
+        'Hậu cần',
+        'Tư vấn'
     ]
 
     const goto = (topic?: string) => {
