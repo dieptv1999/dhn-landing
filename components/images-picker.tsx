@@ -17,7 +17,8 @@ export default function ImagesPicker({value, onChange, multiple = true}: {
       'image/png': ['.png'],
       'image/jpg': ['.jpg'],
       'image/jpeg': ['.jpeg'],
-      'image/gif': ['.gif']
+      'image/gif': ['.gif'],
+      'image/webp': ['.webp'],
     },
     onDrop,
   })
