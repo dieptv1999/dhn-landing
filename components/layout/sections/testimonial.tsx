@@ -74,7 +74,7 @@ interface Props {
 export const TestimonialSection = ({title, subTitle}: Props) => {
 
     return (
-        <section id="testimonials" className="container py-24 sm:py-32">
+        <section id="testimonials" className="container py-12 sm:py-24">
             <div className="text-center mb-8">
                 <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
                     {title}

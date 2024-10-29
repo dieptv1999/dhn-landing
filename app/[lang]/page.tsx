@@ -62,9 +62,9 @@ export default async function Home({params: {lang}}: Props) {
                 keyLabel={translation('contact.key')}
                 formMessagePlaceholder={translation('contact.form.messagePlaceholder')}
                 formMessage={translation('contact.form.message')}
-                firstNameLabel={translation('contact.form.firstName')}
+                nameLabel={translation('contact.form.name')}
                 emailPlaceholder={translation('contact.form.emailPlaceholder')}
-                lastNameLabel={translation('contact.form.lastName')}
+                phoneLabel={translation('contact.form.phone')}
                 subjectLabel={translation('contact.form.subject')}
             />
             <FAQSection title={translation('faq.title')}/>

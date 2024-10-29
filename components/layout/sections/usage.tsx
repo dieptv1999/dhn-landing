@@ -64,15 +64,24 @@ const serviceList: ServiceProps[] = [
     },
     {
         title: "Truy xuất nhanh",
-        description: "Dễ dàng gen link trực tiếp gửi khiếu nại đến các nền tảng thương mại điện tử Shopee, Lazada, Tiktok Shop",
-        image: '/usage/t4.png',
+        description: <div>
+            <ul className={'flex flex-col gap-2'}>
+                <li>Dễ dàng gen link trực tiếp gửi khiếu nại đến các nền tảng thương mại điện tử Shopee, Lazada, Tiktok Shop</li>
+                <li className={'inline-flex gap-1 items-center mt-2'}><CheckCheckIcon color={'green'}/>
+                    <span className={'flex-1'}>Dễ dạng tạo link theo dõi và gửi cho các sàn TMĐT</span>
+                </li>
+                <li className={'inline-flex gap-1 items-center'}><CheckCheckIcon color={'green'}/> Tìm lại video chỉ mất 2s khi nhập mã vẫn đơn
+                </li>
+            </ul>
+        </div>,
+        image: '/usage/t4.png?v=1',
         reverse: true,
     },
 ];
 
 export const UsageSection = () => {
     return (
-        <section id="usage" className="container py-24 sm:py-32 flex flex-col gap-16 md:gap-32">
+        <section id="usage" className="container py-12 sm:py-24 flex flex-col gap-16 md:gap-32">
             {serviceList.map((service) => (
                 <div key={service.title}
                      className={`w-full flex flex-col-reverse md:flex-row gap-3 ${service.reverse ? 'md:flex-row-reverse' : ''}`}>

@@ -21,13 +21,13 @@
   "contact": {
     "key": "Liên hệ",
     "title": "Kết nối với chúng tôi",
-    "description": "Bạn chỉ cần tập trung vào việc bạn làm tốt nhất – phát triển doanh nghiệp và mang đến sản phẩm tuyệt vời – trong khi chúng tôi đảm nhận công việc nhà kho cho bạn.",
+    "description": "DHN hiểu rằng bạn là người bán hàng giỏi - hãy tập trung vào việc phát triển khách hàng và sản phẩm của bạn - chúng tôi sẽ giúp bạn hoàn tất đơn hàng nhanh và tiết kiệm nhất.",
     "form": {
-      "firstName": "Họ",
-      "lastName": "Tên",
-      "emailPlaceholder": "dhn@gmail.com",
-      "subject": "Chủ đề",
-      "message": "Nội dung",
+      "name": "Họ và tên",
+      "phone": "Số điện thoại",
+      "emailPlaceholder": "donghangnhanh@gmail.com",
+      "subject": "Loại giá gói bạn quan tâm",
+      "message": "Chi tiết nhu cầu",
       "messagePlaceholder": "Nhập nội dung yêu cầu..."
     }
   },

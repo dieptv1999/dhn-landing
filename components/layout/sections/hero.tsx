@@ -19,7 +19,7 @@ export const HeroSection = ({title, getStartedButtonLabel, contactButtonLabel, d
     const {theme} = useTheme();
     return (
         <section className="container w-full">
-            <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+            <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-12 md:py-32">
                 <div className="text-center space-y-8">
                     <Badge variant="outline" className="text-sm py-2 cursor-pointer">
             <span className="mr-2 text-primary">
@@ -28,7 +28,7 @@ export const HeroSection = ({title, getStartedButtonLabel, contactButtonLabel, d
                         <span> {highlightLabel}! </span>
                     </Badge>
 
-                    <div className="max-w-[850px] mx-auto text-center text-4xl md:text-6xl font-bold">
+                    <div className="max-w-[850px] mx-auto text-center text-3xl md:text-6xl font-bold">
                         <h1 className={'leading-[1.09] flex flex-col'}>
                             <span>Quay video đóng hàng </span>
                             <span>và truy xuất nhanh chóng</span>
@@ -37,7 +37,7 @@ export const HeroSection = ({title, getStartedButtonLabel, contactButtonLabel, d
                         </h1>
                     </div>
 
-                    <p className="max-w-screen-md mx-auto text-xl text-muted-foreground">
+                    <p className="max-w-screen-md mx-auto text-lg md:text-xl text-muted-foreground">
                         {description}
                     </p>
 
@@ -73,8 +73,8 @@ export const HeroSection = ({title, getStartedButtonLabel, contactButtonLabel, d
                         className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
                         src={
                             theme === "light"
-                                ? "/hero-image-light.jpeg?v=1"
-                                : "/hero-image-dark.jpeg?v=1"
+                                ? "/hero-light.jpeg?v=1"
+                                : "/hero-light.jpeg?v=1"
                         }
                         alt="dashboard"
                     />

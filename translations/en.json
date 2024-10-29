@@ -23,9 +23,9 @@
     "title": "Connect With Us",
     "description": "You just focus on what you do best – growing your business and delivering great products – while we take care of the warehouse work for you.",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "emailPlaceholder": "dhn@gmail.com",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "emailPlaceholder": "donghangnhanh@gmail.com",
       "subject": "Subject",
       "message": "Message",
       "messagePlaceholder": "Your message..."
