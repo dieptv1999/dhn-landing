@@ -1,8 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
+import {ArrowRight, icons} from "lucide-react";
 import {Locale} from "@/i18n";
 import {getTranslation} from "@/lib/i18n/getTranslation";
+import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 interface BenefitsProps {
   icon: string;
@@ -42,7 +44,7 @@ export const BenefitsSection = async ({lang}: {lang: Locale}) => {
   return (
     <section id="benefits" className="container py-12 sm:py-24">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
-        <div>
+        <div className={'mb-3'}>
           <h2 className="text-lg text-primary mb-2 tracking-wider">{translation('benefit.title')}</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -51,6 +53,9 @@ export const BenefitsSection = async ({lang}: {lang: Locale}) => {
           <p className="text-xl text-muted-foreground mb-8 text-start">
             {translation('benefit.descriptionDetail')}
           </p>
+          <Link href={'#features'}>
+          <Button>Xem giải pháp <ArrowRight className={'ml-2'}/></Button>
+          </Link>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-4 w-full">

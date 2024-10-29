@@ -15,7 +15,6 @@ import {useState} from "react";
 const formSchema = z.object({
     name: z.string().min(2, {message: 'Tối thiểu 2 ký tự'}).max(50, {message: 'Tối đa 50 ký tự'}),
     phone: z.string().length(10, {message: 'Số điện thoại không hợp lệ'}),
-    email: z.string().email({message: 'Địa chỉ email là bắt buộc'}),
     plan: z.string().min(2, {message: 'Tối thiểu 2 ký tự'}).max(100, {message: 'Tối đa 100 ký tự'}),
     message: z.string(),
 });
@@ -49,7 +48,6 @@ export const ContactSection = ({
         defaultValues: {
             name: "",
             phone: "",
-            email: "",
             plan: "Gói miễn phí",
             message: "",
         },
@@ -132,8 +130,8 @@ export const ContactSection = ({
                 </div>
 
                 <Card className="bg-muted/60 dark:bg-card" id="contact">
-                    <CardHeader className="text-primary text-2xl"> </CardHeader>
-                    <CardContent>
+                    <CardHeader className="text-primary text-2xl p-3 md:p-6">Đăng ký ngay</CardHeader>
+                    <CardContent className={'p-3 md:p-6'}>
                         <Form {...form}>
                             <form
                                 onSubmit={form.handleSubmit(onSubmit)}
@@ -161,26 +159,6 @@ export const ContactSection = ({
                                                 <FormLabel>{phoneLabel}</FormLabel>
                                                 <FormControl>
                                                     <Input placeholder="0339210xxx" {...field} />
-                                                </FormControl>
-                                                <FormMessage/>
-                                            </FormItem>
-                                        )}
-                                    />
-                                </div>
-
-                                <div className="flex flex-col gap-1.5">
-                                    <FormField
-                                        control={form.control}
-                                        name="email"
-                                        render={({field}) => (
-                                            <FormItem>
-                                                <FormLabel>Email</FormLabel>
-                                                <FormControl>
-                                                    <Input
-                                                        type="email"
-                                                        placeholder={emailPlaceholder}
-                                                        {...field}
-                                                    />
                                                 </FormControl>
                                                 <FormMessage/>
                                             </FormItem>

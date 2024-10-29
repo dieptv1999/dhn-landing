@@ -46,7 +46,7 @@ const plans: PlanProps[] = [
         popular: 0,
         price: 99,
         description:
-            "Chỉ với 1,650VND/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,650đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "60GB dung lượng",
@@ -62,7 +62,7 @@ const plans: PlanProps[] = [
         popular: 1,
         price: 179,
         description:
-            "Chỉ với 1,490VND/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,490đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "120GB dung lượng",
@@ -78,7 +78,7 @@ const plans: PlanProps[] = [
         popular: 0,
         price: 279,
         description:
-            "Chỉ với 1,395VND/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,395đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "200GB dung lượng",
@@ -94,7 +94,7 @@ const plans: PlanProps[] = [
 export const PricingSection = () => {
     return (
         <section id={'pricing'} className="container py-12 sm:py-24">
-            <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+            <h2 className="text-3xl md:text-4xl text-primary text-center mb-2 tracking-wider">
                 Bảng giá
             </h2>
 
@@ -125,8 +125,8 @@ export const PricingSection = () => {
                                 </CardDescription>
 
                                 <div>
-                                    <span className="text-3xl font-bold">${price}</span>
-                                    <span className="text-muted-foreground"> /month</span>
+                                    <span className="text-3xl font-bold">{price}.000đ</span>
+                                    <span className="text-muted-foreground"> /tháng</span>
                                 </div>
                             </CardHeader>
 

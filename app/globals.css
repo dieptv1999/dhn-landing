@@ -153,3 +153,10 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
