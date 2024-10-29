@@ -125,7 +125,7 @@ export const PricingSection = () => {
                                 </CardDescription>
 
                                 <div>
-                                    <span className="text-3xl font-bold">{price}.000đ</span>
+                                    <span className="text-3xl font-bold">{price}{price > 0 ? '.000' : ''}đ</span>
                                     <span className="text-muted-foreground"> /tháng</span>
                                 </div>
                             </CardHeader>
