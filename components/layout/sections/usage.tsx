@@ -84,7 +84,7 @@ export const UsageSection = () => {
         <section id="usage" className="container py-12 sm:py-24 flex flex-col gap-16 md:gap-32">
             {serviceList.map((service) => (
                 <div key={service.title}
-                     className={`w-full flex flex-col-reverse md:flex-row gap-3 ${service.reverse ? 'md:flex-row-reverse' : ''}`}>
+                     className={`md:h-[400px] w-full flex flex-col-reverse md:flex-row gap-3 ${service.reverse ? 'md:flex-row-reverse' : ''}`}>
                     <div className={'flex-1 flex flex-col gap-3 items-center'}>
                         <div className={'max-w-full md:max-w-[540px] w-full flex flex-col gap-3 md:gap-6'}>
                             <span className={'text-xl lg:text-4xl xl:text-5xl font-semibold'}>{service.title}</span>

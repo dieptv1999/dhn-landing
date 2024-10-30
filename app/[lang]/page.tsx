@@ -15,6 +15,7 @@ import BannerCenterSection from "@/components/layout/sections/banner-center";
 
 const UsageSection = dynamic(() => import("@/components/layout/sections/usage").then(mod => mod.UsageSection), {ssr: false});
 const TestimonialSection = dynamic(() => import("@/components/layout/sections/testimonial").then(mod => mod.TestimonialSection), {ssr: false});
+const VideoSection = dynamic(() => import("@/components/layout/sections/video-section"), {ssr: false});
 
 export const runtime = "edge";
 
@@ -45,8 +46,9 @@ export default async function Home({params: {lang}}: Props) {
             {/*  title={translation('partner.title')}*/}
             {/*/>*/}
             <BenefitsSection lang={lang}/>
+            <VideoSection />
             <FeaturesSection lang={lang}/>
-            <BannerCenterSection />
+            <BannerCenterSection/>
             {/*<ServicesSection/>*/}
             <UsageSection/>
             <TestimonialSection

@@ -108,7 +108,7 @@ export const Navbar = ({featureLabel, localSelectorLabel, contactLabel}: Props) 
                     variant="ghost"
                     className="justify-start text-base"
                   >
-                    <Link href={href}>{label}</Link>
+                    <Link href={href} passHref={true}>{label}</Link>
                   </Button>
                 ))}
               </div>

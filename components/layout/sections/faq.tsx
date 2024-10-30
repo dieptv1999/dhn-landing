@@ -13,33 +13,45 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "Có bán camera và máy quét không?",
+    answer: "DHN cung cấp cả thiết bị cho các shop bao gồm Camera Full HD, chân camera, máy quét QR loại có dây hoặc không dây, chi phí hợp lý",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Cần máy tính như thế nào thì dùng được phần mềm?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Với giải pháp này, các shop cần có 1 máy tính cấu hình văn phòng bình thường sử dụng hệ điều hành win 7 đổ lên, hoặc máy tính Macbook đều được",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "10GB tôi sẽ lưu được bao nhiêu video 1 tháng?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "Với gói 10Gb Miễn Phí, phù hợp cho shop lưu được khoảng từ 150 lên đến 250 video đóng hàng, tùy thuộc vào thời gian đóng hàng mà các shop tối ưu được. Phù hợp với các shop mới mở, hoặc các shop muốn trải nghiệm thử ",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Dùng phần mềm trên điện thoại được không?",
+    answer: "Phần mềm DHN dùng được cả trên điện thoại mà không tốn dung lượng máy, anh/chị có thể tận dụng luôn camera của điện thoại cùng với đó là dùng máy quét QR kết nối bluetooth có giá chưa tới 600k",
     value: "item-4",
   },
   {
     question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+      "Lấy video khiếu nại ở đâu?",
+    answer: "Sau khi đóng hàng xong, video sẽ được lưu theo mã vận đơn trong \"Danh sách video\", tại đây anh chị có thể tạo link tracking để gửi cho sàn TMĐT hoặc tải video về máy và gửi trực tiếp",
     value: "item-5",
+  },
+  {
+    question:
+        "Tôi có thể sử dụng phần mềm với camera và máy quét tự mua không?",
+    answer: "Phần mềm DHN sẽ tương thích với tất cả thiết bị là webcam và máy quét QR trên thị trường, Tuy nhiên khi sử dụng Camera của DHN cung cấp sẽ tối ưu về dung lượng lưu trữ và chất lượng video hơn là anh chị tự chọn.",
+    value: "item-6",
+  },
+  {
+    question:
+        "Thời gian lưu video là bao lâu?",
+    answer: "Video sẽ được lưu tối đa 25 ngày kể từ ngày đóng hàng, để đảm bảo gói dung lượng của shop không bị tràn",
+    value: "item-7",
   },
 ];
 
