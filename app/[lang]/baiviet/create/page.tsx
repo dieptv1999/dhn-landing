@@ -1,5 +1,4 @@
 'use client'
-import '@mdxeditor/editor/style.css'
 import dynamic from "next/dynamic";
 import {z} from "zod";
 import {useForm, UseFormReturn} from "react-hook-form";
@@ -8,7 +7,6 @@ import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from "@/
 import {Input} from "@/components/ui/input";
 import React, {useState} from "react";
 import {TagInput} from "emblor";
-import {MDXRemoteSerializeResult} from "next-mdx-remote";
 import {RepositoryFactory} from "@/api/repository-factory";
 import {AxiosError, AxiosResponse, HttpStatusCode} from "axios";
 import {Button} from "@/components/ui/button";
@@ -17,6 +15,8 @@ import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/c
 import {useToast} from "@/hooks/use-toast";
 import {CircleX} from "lucide-react";
 import ImagesPicker from "@/components/images-picker";
+import '@mdxeditor/editor/style.css'
+
 
 const FileRepository = RepositoryFactory.get('file')
 const ArticleRepository = RepositoryFactory.get('article')
