@@ -73,7 +73,7 @@ export const ContactSection = ({
     }
 
     return (
-        <section id={'contact'} className="container py-12 sm:py-24">
+        <section className="container py-12 sm:py-24">
             <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <div className="mb-4">
@@ -129,7 +129,7 @@ export const ContactSection = ({
                     </div>
                 </div>
 
-                <Card className="bg-muted/60 dark:bg-card">
+                <Card className="bg-muted/60 dark:bg-card" id={'contact'}>
                     <CardHeader className="text-primary text-2xl p-3 md:p-6">Đăng ký ngay</CardHeader>
                     <CardContent className={'p-3 md:p-6'}>
                         <Form {...form}>

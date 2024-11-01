@@ -61,7 +61,7 @@ interface Props {
 
 export const FAQSection = ({title}: Props) => {
   return (
-    <section id="faq" className="container md:w-[700px] py-12 sm:py-24">
+    <section id="faq" className="container md:w-[700px] py-12">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           FAQS

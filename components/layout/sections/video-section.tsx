@@ -9,7 +9,7 @@ export default function VideoSection() {
                     width="100%"
                     height="100%"
                     className={'aspect-video'}
-                    src="https://www.youtube.com/embed/-vJxa4iBNK0"
+                    src="https://www.youtube.com/embed/eRBJqwviQHk"
                     // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     loading="lazy"

@@ -50,13 +50,6 @@ export default async function Home({params: {lang}}: Props) {
             <FeaturesSection lang={lang}/>
             <BannerCenterSection/>
             {/*<ServicesSection/>*/}
-            <UsageSection/>
-            <TestimonialSection
-                title={translation('testimonials.title')}
-                subTitle={translation('testimonials.subTitle')}
-            />
-            {/*<TeamSection lang={lang}/>*/}
-            <CommunitySection/>
             <PricingSection/>
             <ContactSection
                 title={translation('contact.title')}
@@ -69,6 +62,13 @@ export default async function Home({params: {lang}}: Props) {
                 phoneLabel={translation('contact.form.phone')}
                 subjectLabel={translation('contact.form.subject')}
             />
+            <UsageSection/>
+            <TestimonialSection
+                title={translation('testimonials.title')}
+                subTitle={translation('testimonials.subTitle')}
+            />
+            {/*<TeamSection lang={lang}/>*/}
+            <CommunitySection/>
             <FAQSection title={translation('faq.title')}/>
             <FooterSection lang={lang}/>
         </>

@@ -126,7 +126,7 @@ export const PricingSection = () => {
 
                                 <div>
                                     <span className="text-3xl font-bold">{price}{price > 0 ? '.000' : ''}đ</span>
-                                    <span className="text-muted-foreground"> /tháng</span>
+                                    {price > 0 && <span className="text-muted-foreground"> /tháng</span>}
                                 </div>
                             </CardHeader>
 
