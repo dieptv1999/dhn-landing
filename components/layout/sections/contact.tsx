@@ -60,7 +60,8 @@ export const ContactSection = ({
             data.append(entry[0], entry[1])
         }
 
-        axios.post('https://script.google.com/macros/s/AKfycbwRNKaGv0X286giOeJ6RAD66j4crWIYCbT-n60zrd9WA0hpl_VkuuMitLWbf-O13gzikA/exec', data)
+        // https://script.google.com/macros/s/AKfycbxH2qc1nPNTbW2Px3pQ7JXtKNq2PJ9_Mk1C4BeTN-kBRP1XPuYmB1uV5QubK7F8f1OBWw/exec
+        axios.post('https://script.google.com/macros/s/AKfycbzAFlxP0K4UEkTceXX6LXn5K_j3XXLgb2RYyAdICShHP_cft4A6QLsYcmwNLbDVgOp7dQ/exec', data)
             .then(res => {
                 alert('Bạn đã đăng ký thông tin thành công. Chúng tôi sẽ liên hệ trong vòng 1 giờ tới')
                 form.reset()
