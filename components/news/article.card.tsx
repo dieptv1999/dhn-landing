@@ -25,9 +25,9 @@ export default function ArticleCard({article}: { article: any }) {
                 {getTagsFirst(article.tags) ? <div className={'absolute top-2 left-0 bg-[#505050] text-white text-xs px-2 py-1 rounded-r'}>{getTagsFirst(article.tags)}</div> : null}
             </div>
             <div className={'flex-1 flex flex-col gap-3'}>
-                <div className={'text-gray-700/80 text-sm'}>{formatCreatedDate(article.createdAt)}</div>
+                <div className={'light:text-gray-700/80 text-gray-200/80 text-sm'}>{formatCreatedDate(article.createdAt)}</div>
                 <div className={'font-semibold text-sm md:text-lg hover:opacity-50'}>{article.title}</div>
-                <div className={'text-sm text-gray-900'}>{article.subTitle}</div>
+                <div className={'text-sm light:text-gray-900'}>{article.subTitle}</div>
             </div>
         </Link>
     )

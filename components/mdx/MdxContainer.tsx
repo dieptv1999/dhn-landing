@@ -4,7 +4,7 @@ import {components} from "@/components/mdx/index";
 
 export default function MdxContainer({source}: { source: any }) {
   return (
-    <div className={'prose-sm md:prose my-3'}>
+    <div className={'prose-sm md:prose my-3 dark:prose-invert'}>
       <MDXRemote {...source} components={components}/>
     </div>
   )
