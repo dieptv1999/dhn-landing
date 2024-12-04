@@ -112,9 +112,7 @@ export const PricingSection = () => {
                         <Card
                             key={title}
                             className={
-                                popular === PopularPlan?.YES
-                                    ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1]"
-                                    : ""
+                                    "hover:drop-shadow-xl hover:shadow-black/10 hover:dark:shadow-white/10 hover:border-[1.5px] hover:border-primary hover:lg:scale-[1.1]"
                             }
                         >
                             <CardHeader>
