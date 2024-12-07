@@ -44,9 +44,9 @@ const plans: PlanProps[] = [
     {
         title: "Gói cơ bản",
         popular: 0,
-        price: 99,
+        price: 119,
         description:
-            "Chỉ với 1,650đ/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,1985đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "60GB dung lượng",
@@ -60,9 +60,9 @@ const plans: PlanProps[] = [
     {
         title: "Gói tiết kiệm",
         popular: 1,
-        price: 179,
+        price: 199,
         description:
-            "Chỉ với 1,490đ/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,659đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "120GB dung lượng",
@@ -76,9 +76,9 @@ const plans: PlanProps[] = [
     {
         title: "Gói cao cấp",
         popular: 0,
-        price: 279,
+        price: 299,
         description:
-            "Chỉ với 1,395đ/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,495đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "200GB dung lượng",
