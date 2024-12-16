@@ -46,7 +46,7 @@ const plans: PlanProps[] = [
         popular: 0,
         price: 119,
         description:
-            "Chỉ với 1,1985đ/GB! Chi phí cực kỳ hợp lý.",
+            "Chỉ với 1,985đ/GB! Chi phí cực kỳ hợp lý.",
         buttonText: "Đăng ký",
         benefitList: [
             "60GB dung lượng",
@@ -112,7 +112,9 @@ export const PricingSection = () => {
                         <Card
                             key={title}
                             className={
-                                    "hover:drop-shadow-xl hover:shadow-black/10 hover:dark:shadow-white/10 hover:border-[1.5px] hover:border-primary hover:lg:scale-[1.1]"
+                                popular === PopularPlan?.YES
+                                    ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1]"
+                                    : ""
                             }
                         >
                             <CardHeader>
@@ -123,7 +125,7 @@ export const PricingSection = () => {
                                 </CardDescription>
 
                                 <div>
-                                    <span className="text-3xl font-bold">{price}{price > 0 ? '.000' : ''}đ</span>
+                                    <span className="text-3xl font-bold">{price}{price > 0 ? '.000' : ''}đ {price  === 0 && <span className={'text-sm font-normal text-gray-600'}>(Dùng thử trong 5 ngày)</span>}</span>
                                     {price > 0 && <span className="text-muted-foreground"> /tháng</span>}
                                 </div>
                             </CardHeader>
