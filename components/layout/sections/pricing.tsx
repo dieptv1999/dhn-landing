@@ -1,3 +1,4 @@
+'use client'
 import {Button} from "@/components/ui/button";
 import {
     Card,
@@ -9,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import {Check} from "lucide-react";
 import Link from "next/link";
+import {event} from "@/lib/fpixel";
 
 enum PopularPlan {
     NO = 0,
@@ -33,7 +35,7 @@ const plans: PlanProps[] = [
             "Với gói trải nghiệm này, bạn có thể ghi lại toàn bộ quá trình đóng gói.",
         buttonText: "Bắt đầu dùng thử",
         benefitList: [
-            "5GB dung lượng",
+            "500MB dung lượng",
             "1 người dùng",
             "1 cửa hàng",
             "Khung hình 2 camera",
@@ -148,6 +150,9 @@ export const PricingSection = () => {
                                             popular === PopularPlan?.YES ? "default" : "secondary"
                                         }
                                         className="w-full hover:border-primary"
+                                        onClick={() => {
+                                            event('Contact', {plan: title});
+                                        }}
                                     >
                                         {buttonText}
                                     </Button>

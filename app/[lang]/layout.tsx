@@ -7,6 +7,7 @@ import {ThemeProvider} from "@/components/layout/theme-provider";
 import React from "react";
 import {GoogleAnalytics} from '@next/third-parties/google'
 import FacebookPixel from "@/components/FacebookPixel";
+import {FB_PIXEL_ID} from "@/lib/fpixel";
 
 export const runtime = "edge";
 
@@ -66,6 +67,16 @@ export default function RootLayout({
                                    }: Props) {
     return (
         <html lang={params.lang} suppressHydrationWarning>
+        <head>
+            <noscript>
+                <img
+                    height="1"
+                    width="1"
+                    style={{display: "none"}}
+                    src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+                />
+            </noscript>
+        </head>
         <body className={cn("min-h-screen bg-background", lexend.className)}>
         <ThemeProvider
             attribute="class"

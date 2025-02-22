@@ -67,7 +67,7 @@ export const ContactSection = ({
             })
             .catch(err => {
                 console.log(err)
-                alert('Đăng ký không thành công. Vui lòng thử lại hoặc liên hệ 0788624968')
+                alert('Đăng ký không thành công. Vui lòng thử lại hoặc liên hệ 0819492713')
             })
             .finally(() => setLoading(false))
     }
@@ -103,7 +103,7 @@ export const ContactSection = ({
                                 <div className="font-bold">Số điện thoại</div>
                             </div>
 
-                            <div>0788624968</div>
+                            <div>0819492713</div>
                         </div>
 
                         <div>
